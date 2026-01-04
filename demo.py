@@ -39,3 +39,16 @@ print("Sum of A and B is ", addition(numA, numB))
 print("Difference of A and B is ", subtraction(numA, numB))
 print("Product of A and B is ", multiplication(numA, numB))
 print("Quotient of A and B is ", division(numA, numB))
+
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+length = int(input("How many fibonacci terms? "))
+
+for i in range(length):
+    print(fibonacci(i), end=", ")
